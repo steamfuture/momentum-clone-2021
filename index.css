@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@import "css/reset.css";
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://source.unsplash.com/random");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Anton", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.js-clockTitle {
+  color: #f1f2f6;
+  font-size: 150px;
+}
+
+.js-nameForm {
+  display: flex;
+}
+.js-nameForm input,
+.js-toDoForm input {
+  margin-top: 30px;
+  border: none;
+  border-bottom: 1px solid #f1f2f6;
+  background: none;
+  font-size: 50px;
+  color: #f1f2f6;
+  text-align: center;
+  font-family: "Anton", sans-serif;
+}
+
+.js-nameForm input::placeholder,
+.js-toDoForm input::placeholder {
+  color: #f1f2f6;
+}
+
+.js-nameForm input:focus,
+.js-toDoForm input:focus,
+.js-toDoList button:focus,
+.js-searchForm button:focus {
+  outline: none;
+}
+
+.js-greetings,
+.js-toDoList {
+  margin-top: 30px;
+  color: #f1f2f6;
+  font-size: 50px;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+  color: #f1f2f6;
+  font-size: 50px;
+}
+
+.js-toDoList li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.js-toDoList button,
+.js-searchForm button {
+  background: none;
+  border: none;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 0px 10px;
+  color: #f1f2f6;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.js-searchForm button {
+  color: #f1f2f6;
+  font-size: 15px;
+  font-family: "Anton", sans-serif;
+  cursor: pointer;
+}

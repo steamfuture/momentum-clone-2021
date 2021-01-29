@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum Clone</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- search -->
+      <form class="js-searchForm">
+        <button type="button" class="js-searchBtn">Search</button>
+      </form>
+      <!-- weather -->
+      <span class="js-weather"></span>
+    </header>
+
+    <!-- clock -->
+    <div class="js-clock">
+      <h1 class="js-clockTitle">00:00:00</h1>
+    </div>
+    <!-- greeting -->
+    <h4 class="js-greetings">Thank you for visiting My website!</h4>
+    <form class="js-nameForm form">
+      <input type="text" placeholder="What's your name?" />
+    </form>
+    <h4 class="js-greetings greetings"></h4>
+    <!-- To Do -->
+    <form class="js-toDoForm">
+      <input type="text" placeholder="Write a to do" />
+    </form>
+    <ul class="js-toDoList"></ul>
+
+    <!-- script -->
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="weather.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>
